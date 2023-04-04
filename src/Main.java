@@ -20,7 +20,7 @@ public class Main {
                            TaskService.editTask(scanner);
                            break;
                        case 3:
-                           TaskService.delitTask(scanner);
+                           TaskService.deleteTask(scanner);
                            break;
                        case 4:
                            TaskService.getTaskByDay(scanner);

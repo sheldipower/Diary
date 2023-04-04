@@ -10,7 +10,7 @@ public abstract class Task {
     private  String title;
     private final Type type;
     private final LocalDateTime dateTime;
-    private final   String description;
+    private   String description;
     private boolean archived;
     private static Integer counter = 1;
     private final Integer id;
@@ -47,9 +47,11 @@ public abstract class Task {
         return description;
     }
 
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
-
-     public abstract boolean appearsln (LocalDateTime localDateTime);
+    public abstract boolean appearsln (LocalDateTime localDateTime);
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
